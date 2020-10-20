@@ -3,13 +3,10 @@
 <?php
 require_once('../protected/config.php');
 $conn = new mysqli(DBHOST, DBUSER, DBPASS, DBNAME);
-
 if ($conn->connect_error) {
     $errorMsg = "Connection failed: " . $conn->connect_error;
     $success = false;
 }
-else
-    echo "Connected successfully";
 ?>
 <html lang="en">
 
